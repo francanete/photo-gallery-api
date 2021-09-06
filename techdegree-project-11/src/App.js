@@ -1,17 +1,12 @@
 import Header from './components/Header'
-import Home from './components/Home';
-import apiKey from "./config.js"
-
-const api = apiKey;
+import ImageList from './components/ImageList';
 
 function App() {
 
-
-
   return (
-    <div className="App">
+    <div className="container">
       <Header />
-      <Home />
+      <ImageList />
     </div>
   );
 }
