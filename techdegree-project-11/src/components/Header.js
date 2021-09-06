@@ -1,10 +1,11 @@
 import Search from "./Search";
 import Nav from "./Nav";
 
-const Header = () => {
+const Header = ({ setSearchTag }) => {
+
   return ( 
     <div>
-      <Search />
+      <Search setSearchTag={setSearchTag} />
       <Nav />
     </div>
    );

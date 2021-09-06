@@ -1,12 +1,17 @@
 import Image from './Image'
 import useFetch from './useFetch';
 import apiKey from '../config';
+import { useParams } from 'react-router-dom'
 
 let api = apiKey;
 
+
 const ImageList = () => {
 
-  const { data: images, isPending, error } = useFetch(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${api}&tags=elvis&per_page=24&format=json&nojsoncallback=1`)
+  const {id} = useParams()
+  console.log(id)
+
+  const { data: images, isPending, error } = useFetch(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${api}&tags=${id}&per_page=24&format=json&nojsoncallback=1`)
   return ( 
     
     <div className="photo-container">

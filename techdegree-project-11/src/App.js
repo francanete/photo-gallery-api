@@ -1,12 +1,21 @@
-import Header from './components/Header'
+import Header from './components/Header';
 import ImageList from './components/ImageList';
+import { useState } from 'react';
+import { BrowserRouter, Route, Redirect } from 'react-router-dom'
 
-function App() {
+
+function App({ searchInput }) {
+  const [searchTag, setSearchTag] = useState("sunsets");
+
 
   return (
     <div className="container">
-      <Header />
-      <ImageList />
+    
+      <BrowserRouter>
+        <Header setSearchTag={setSearchTag} />
+        <Route path="/search/:id" component={ImageList} />
+        <Redirect to="/search/sunset" />
+      </BrowserRouter>
     </div>
   );
 }
