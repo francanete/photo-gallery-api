@@ -3,11 +3,9 @@ import { Link } from 'react-router-dom';
 const NotFound = () => {
   return ( 
     <div className="not-found">
-      <h2>Sorry</h2>
-      <p>That page cannot be found</p>
-      <Link to='/'>Back to the homepage...</Link>
-      <nav className="main-nav">
-        <ul>
+      <h2>Oops!</h2>
+      <p>That page cannot be found, but here you have some great suggestions:</p>
+        <ul className="suggestion-nav">
           <li><Link to="/search/spain">Cats</Link></li>
           <li><Link to="/search/singapore">Dogs</Link></li>
           <li><Link to="/search/california">Computers</Link></li>
@@ -15,7 +13,6 @@ const NotFound = () => {
           <li><Link to="/search/singapore">Dogs</Link></li>
           <li><Link to="/search/california">Computers</Link></li>
         </ul>
-      </nav>
     </div>
    );
 }

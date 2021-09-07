@@ -57,6 +57,20 @@ input {
   padding: 5px;
   color: #fff;
 }
+.suggestion-nav li {
+  display: inline-block;
+  width: auto;
+  margin: 2rem auto;
+}
+
+.suggestion-nav a {
+  background: #438abd2c;
+  border-radius: 3px;
+  padding: 5px;
+  margin: .5rem;
+  color: rgb(74, 74, 74);
+  font-style: underline;
+}
 
 .main-nav .active,
 .main-nav a:hover,
@@ -114,6 +128,11 @@ input {
   }
 
   .main-nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .suggestion-nav ul {
     display: flex;
     justify-content: center;
   }
