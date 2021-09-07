@@ -9,11 +9,10 @@ let api = apiKey;
 const ImageList = () => {
 
   const {id} = useParams()
-  console.log(id)
 
-  const { data: images, isPending, error } = useFetch(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${api}&tags=${id}&per_page=24&format=json&nojsoncallback=1`)
-  return ( 
-    
+  const { data: images, isPending, setIsPending, error } = useFetch(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${api}&tags=${id}&per_page=24&format=json&nojsoncallback=1`)
+  
+  return (   
     <div className="photo-container">
       <h2>Results</h2>
       { error && <div>{ error }</div> }
@@ -25,7 +24,7 @@ const ImageList = () => {
             key={image.id}
           />
       ))}
-      </ul>   
+      </ul>
   </div>
    );
 }

@@ -14,8 +14,8 @@ const Search = ({ setSearchTag }) => {
   
   const handleSubmit =  (e) => {
     e.preventDefault();
-    // setSearchTag(searchInput);
     history.push(`/search/${searchInput}`)
+    e.currentTarget.reset();
   }
 
   return ( 
