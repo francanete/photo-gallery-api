@@ -11,10 +11,13 @@ const Search = ({ setSearchTag }) => {
     setSearchInput(e.target.value)
     console.log(searchInput)
   }
+
+  // const { setIsPending }
   
   const handleSubmit =  (e) => {
     e.preventDefault();
     history.push(`/search/${searchInput}`)
+    
     e.currentTarget.reset();
   }
 

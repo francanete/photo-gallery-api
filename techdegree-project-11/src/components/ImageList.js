@@ -12,7 +12,12 @@ const ImageList = () => {
 
   const { data: images, isPending, setIsPending, error } = useFetch(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${api}&tags=${id}&per_page=24&format=json&nojsoncallback=1`)
   
-  return (   
+  let results = true;
+  if (images) {
+    results = false;
+  }
+
+  return (
     <div className="photo-container">
       <h2>Results</h2>
       { error && <div>{ error }</div> }
@@ -25,7 +30,8 @@ const ImageList = () => {
           />
       ))}
       </ul>
-  </div>
+      { !results && <div>Oops! There are no results for that search.</div> }
+    </div>
    );
 }
  
