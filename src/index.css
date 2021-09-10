@@ -35,7 +35,7 @@ a {
     #568bda 48%,
     #4d64e6 100%);
   
-  border: transparent;
+  /* border: transparent; */
   margin: none;
   padding: 0px 15px;
   border-radius: 0 0.35em 0.35em 0;
