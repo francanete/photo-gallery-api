@@ -15,8 +15,6 @@ const ImageList = () => {
   let results = true;
   let content;
 
-  // <div>Loading...</div>
-
   if (isPending) {
     content = <img src="../loading.svg" alt=""/>
   } else if (!images.length) {
