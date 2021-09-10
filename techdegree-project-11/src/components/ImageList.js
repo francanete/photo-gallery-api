@@ -40,8 +40,7 @@ const ImageList = () => {
     
     <div className="photo-container">
       { content }
-      {/* { !results && <img src="./loading.svg" alt=""/> } */}
-      { !results && <div>Oops! There are no results for that search.</div> }
+]      { !results && <div>Oops! There are no results for that search.</div> }
     </div>
    );
 }
