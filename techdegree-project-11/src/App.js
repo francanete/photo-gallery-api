@@ -2,11 +2,11 @@ import Header from './components/Header';
 import ImageList from './components/ImageList';
 import NotFound from './components/NotFound';
 import { useState } from 'react';
-import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 
 function App({ searchInput }) {
-  const [searchTag, setSearchTag] = useState("sunsets");
+  const [ setSearchTag] = useState("sunsets");
 
 
   return (

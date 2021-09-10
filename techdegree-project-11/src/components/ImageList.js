@@ -10,19 +10,23 @@ const ImageList = () => {
 
   const {id} = useParams()
 
-  const { data: images, isPending, setIsPending, error } = useFetch(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${api}&tags=${id}&per_page=24&format=json&nojsoncallback=1`)
+  const { data: images, isPending, error } = useFetch(`https://www.flickr.com/services/rest/?method=flickr.photos.search&api_key=${api}&tags=${id}&per_page=24&format=json&nojsoncallback=1`)
   
   let results = true;
-  if (images) {
-    results = false;
-  }
+  let content;
 
-  return (
-    <div className="photo-container">
-      <h2>Results</h2>
-      { error && <div>{ error }</div> }
-      { isPending && <div>Loading...</div> }
-      <ul>
+  // <div>Loading...</div>
+
+  if (isPending) {
+    content = <img src="../loading.svg" alt=""/>
+  } else if (!images.length) {
+    results = false;
+  } else if (error) {
+    content =
+    <div>{ error }</div>
+  } else if (images) {
+    content=
+    <ul>
       { images && images.map((image) => (
           <Image  
             url={`https://farm${image.farm}.staticflickr.com/${image.server}/${image.id}_${image.secret}.jpg`}
@@ -30,6 +34,13 @@ const ImageList = () => {
           />
       ))}
       </ul>
+  } 
+
+  return (
+    
+    <div className="photo-container">
+      { content }
+      {/* { !results && <img src="./loading.svg" alt=""/> } */}
       { !results && <div>Oops! There are no results for that search.</div> }
     </div>
    );

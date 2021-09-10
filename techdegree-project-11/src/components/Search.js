@@ -5,7 +5,6 @@ const Search = ({ setSearchTag }) => {
 
   const [searchInput, setSearchInput] = useState('elvis');
   let history = useHistory();
-  console.log(history)
   
   const handleChange = (e) => {
     setSearchInput(e.target.value)
