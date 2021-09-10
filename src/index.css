@@ -26,7 +26,7 @@ a {
 }
 
 .search-form button {
-  outline: none;
+  /* outline: 23px; */
   /* background-color: #438bbd; */
 
   background-image: linear-gradient(
@@ -36,7 +36,8 @@ a {
     #4d64e6 100%);
   
   border: none;
-  padding: 0px 15px;
+  margin: none;
+  /* padding: 0px 15px; */
   border-radius: 0 0.35em 0.35em 0;
   cursor: pointer;
 }
