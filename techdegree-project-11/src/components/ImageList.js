@@ -38,7 +38,7 @@ const ImageList = () => {
     
     <div className="photo-container">
       { content }
-]      { !results && <div>Oops! There are no results for that search.</div> }
+      { !results && <div>Oops! There are no results for that search.</div> }
     </div>
    );
 }
