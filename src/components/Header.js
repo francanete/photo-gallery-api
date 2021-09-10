@@ -5,6 +5,7 @@ const Header = ({ setSearchTag }) => {
 
   return ( 
     <div>
+      <h1>The Flickr API photo gallery</h1>
       <Search setSearchTag={setSearchTag} />
       <Nav />
     </div>
