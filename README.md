@@ -41,30 +41,14 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+What's this all about?
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Languages and Tools:
 
-### Code Splitting
+![7016965741557996995.svg](Readme%20md%20381f3ab0354242e992d81394d24bcc5b/7016965741557996995.svg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![367592651557997006.svg](Readme%20md%20381f3ab0354242e992d81394d24bcc5b/367592651557997006.svg)
 
-### Analyzing the Bundle Size
+![JS.svg](Readme%20md%20381f3ab0354242e992d81394d24bcc5b/JS.svg)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![react.svg](Readme%20md%20381f3ab0354242e992d81394d24bcc5b/react.svg)
