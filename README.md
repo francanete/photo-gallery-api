@@ -41,19 +41,9 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 ## Learn More
 
-What's this all about?
 
-Languages and Tools:
 
-![7016965741557996995.svg](Readme%20md%20381f3ab0354242e992d81394d24bcc5b/7016965741557996995.svg)
-
-![367592651557997006.svg](Readme%20md%20381f3ab0354242e992d81394d24bcc5b/367592651557997006.svg)
-
-![JS.svg](Readme%20md%20381f3ab0354242e992d81394d24bcc5b/JS.svg)
-
-![react.svg](Readme%20md%20381f3ab0354242e992d81394d24bcc5b/react.svg)
-
-<h3 align="center">A passionate frontend developer from India</h3>
+<h1 align="center">A passionate frontend developer from India</h1>
 
 
 <h3 align="left">Languages and Tools:</h3>
